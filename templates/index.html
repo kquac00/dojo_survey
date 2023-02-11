@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+    <h1>Dojo Survey</h1>
+
+    <main class="main">
+        <form class="mainLayout" action="/process_form" method="post">
+            
+            
+            <div class="inputName">
+                <label for="name">Name</label>
+                <input class="nameBox" type="text" name="name" id="name">
+            </div>
+
+
+            <div class="locationTag">
+                <label for="location">Dojo Location</label>
+                <select name="location" id="location">
+                    <option value="Seattle">Seattle</option>
+                    <option value="Burbank">Burbank</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="San Jose">San Jose</option>
+                    <option value="Online">Online</option>
+                </select>
+            </div>
+            
+            
+            <div class="languageTag">
+                <label for="fav_language">Favorite Language</label>
+                <select name="fav_language" id="fav_language">
+                    <option value="html">HTML</option>
+                    <option value="java">JAVA</option>
+                    <option value="c++">C++</option>
+                    <option value="python">PYTHON</option>
+                    <option value="css">CSS</option>
+                </select>
+            </div>
+
+
+            <div>
+                <textarea id="comment" name="comment" placeholder="input comment..." rows="8" cols="50"></textarea>
+            </div>
+            
+            <button class="create_button">Create</button>
+
+        </form>
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+            <label for="fav_language">Favorite Language</label>
+            <input type="submit" name="comment">
+        </div> -->
